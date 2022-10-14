@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Queue<Person> queue = new LinkedList<>(generateClients());
         while (!queue.isEmpty()) {
-            System.out.print(queue.peek().getName() + " прокатился. ");
+            System.out.print(queue.peek().getName() + " прокатился на аттракционе. ");
             queue.peek().spendTicket();
             System.out.println("(Осталось " + queue.peek().getTickets() + " билетов.)");
             Person temp = queue.poll();
